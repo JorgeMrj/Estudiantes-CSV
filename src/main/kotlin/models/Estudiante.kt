@@ -6,9 +6,9 @@ import java.time.LocalDateTime
 data class Estudiante (
     val id: Long,
     val nombre: String,
+    val createdAt: LocalDateTime,
     val tipo: Tipo,
     val edad: Int,
-    val createdAt: LocalDateTime,
 ) {
 }
 

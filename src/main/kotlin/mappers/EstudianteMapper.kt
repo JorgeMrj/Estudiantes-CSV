@@ -7,10 +7,10 @@ import java.time.LocalDateTime
 
 class EstudianteMapper {
 
-    fun Estudiante.toModel() = Estudiante(
+    fun EstudianteDTO.toModel() = Estudiante(
         id = id,
         nombre = nombre,
-        tipo = Tipo.valueOf(tipo.name),
+        tipo = Tipo.valueOf(tipo),
         edad = edad,
         createdAt = LocalDateTime.parse(createdAt.toString())
     )
